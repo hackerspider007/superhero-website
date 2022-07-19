@@ -1,0 +1,310 @@
+/* @font-face{
+    font-family: xolonium;
+    src: url(../assets/fonts/Xolonium-Regular.ttf);
+}
+
+*{
+    font-family: Xolonium;
+    color: white;
+    background-color: black;
+} */
+
+#alert {
+  position: absolute;
+  top: 30px;
+  border-radius: 10px;
+  z-index: 99;
+  width: max-content;
+  text-align: center;
+  padding: 5px;
+  float: right;
+  right: 250px;
+  transition-duration: 800ms;
+}
+
+.success {
+  color: black;
+  background-color: red;
+}
+
+.failure {
+  color: black;
+  background-color: yellow;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  display: inline-flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 15px 0px red;
+  z-index: 99;
+}
+
+#header-color {
+  background-image: linear-gradient(
+    to right,
+    #e4afcb 0%,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #e2c58b 30%,
+    #c2ce9c 64%,
+    #7edbdc 100%
+  );
+}
+
+header * {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.favourite-router * {
+  border-radius: 10px;
+}
+
+.favourite-router *:hover {
+  color: red;
+}
+
+.app-name {
+  padding-left: 20px;
+}
+
+.app-name a {
+  text-decoration: none;
+  font-family: Impact, fantasy;
+  text-transform: uppercase;
+}
+
+header button {
+  margin-right: 20px;
+}
+
+header button a {
+  text-decoration: none;
+}
+
+#remove-styling {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Impact, fantasy;
+  text-transform: uppercase;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 1vh;
+}
+
+#top-bar {
+  position: fixed;
+  top: 80px;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0px 0px 15px 0px #ff2121;
+  z-index: 10;
+  background-color: beige;
+}
+
+#top-bar * {
+  padding: 20px 0px 20px 0px;
+  text-decoration: none;
+}
+
+#top-bar *:hover {
+  color: red;
+}
+
+.anchor {
+  display: block;
+  height: 200px; /*same height as header*/
+  margin-top: -200px; /*same height as header*/
+  visibility: hidden;
+}
+
+#data-container {
+  position: relative;
+  margin-top: 139px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background: #dbe6f6;
+  background: -webkit-linear-gradient(to right, #c5796d, #dbe6f6);
+  background: linear-gradient(to right, #c5796d, #dbe6f6);
+}
+
+#image {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-left: 30px;
+  padding: 100px;
+  align-items: center;
+}
+
+#fav_btn {
+  margin-top: 30px;
+  box-shadow: 0px 0px 15px 0px #ff2121;
+  border-radius: 100%;
+}
+
+#detail-container {
+  position: relative;
+  width: 70%;
+}
+
+.detail-item {
+  padding: 20px;
+  width: 80%;
+}
+
+#stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+
+#stat-names {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding-right: 20px;
+}
+
+#stat-names span {
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+}
+
+#stat-bars {
+  width: 80%;
+}
+
+.bar-container {
+  background-color: rgba(0, 0, 0, 0);
+  width: 60%;
+  padding: 5px;
+}
+
+.bar {
+  background-color: red;
+  border-radius: 10px;
+  padding: 10px;
+  transition-duration: 600ms;
+}
+
+/* Style the rainbow text element. */
+.rainbow-text {
+  /* Create a conic gradient. */
+  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+  background: #ca4246;
+  background-color: #ca4246;
+  background: conic-gradient(
+    #ca4246 16.666%,
+    #e16541 16.666%,
+    #e16541 33.333%,
+    #f18f43 33.333%,
+    #f18f43 50%,
+    #8b9862 50%,
+    #8b9862 66.666%,
+    #476098 66.666%,
+    #476098 83.333%,
+    #a7489b 83.333%
+  );
+
+  /* Set thee background size and repeat properties. */
+  background-size: 57%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
+/* Add animation on hover. */
+.rainbow-text:hover {
+  animation: rainbow-text-animation 0.5s ease forwards;
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
+
+.change-font {
+  font-family: cursive;
+}
+
+#applyingBorderradius{
+  border-radius:15px;
+}
+
