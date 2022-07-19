@@ -1,8 +1,8 @@
 // Commonly used values
 const access_token = '338148107599656';
 const api_url = "https://www.superheroapi.com/api.php/"+access_token+"/";
-const favFalse = "assets\images\white_star.png";
-const favTrue = "assets\images\red_star.png";
+const favFalse = "assets/images/white_star.png";
+const favTrue = "assets/images/red_star.png";
 
 driver();
 
