@@ -4,10 +4,10 @@ A Simple project made of HTML, CSS and JS using the awesome [Superhero API](http
 ## Folder Structure
 This contains 3 pages each having it's separate css and js files:<br><br>
     &nbsp;├── assets<br>
-    &nbsp;├── pages<br>
-    &nbsp;│   ├── details.html<br>
-    &nbsp;│   ├── favourites.html<br>
-    &nbsp;│   └── index.html<br>
+    &nbsp;|
+    &nbsp;├──details.html<br>
+    &nbsp;├──favourites.html<br>
+    &nbsp;├──index.html<br>
     &nbsp;├── scripts<br>
     &nbsp;│   ├── details.js<br>
     &nbsp;│   ├── favourites.js<br>
