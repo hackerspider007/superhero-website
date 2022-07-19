@@ -21,7 +21,7 @@ This contains 3 pages each having it's separate css and js files:<br><br>
 Made this for practicing some basic vanilla JS concepts.
 
 # Take a look
-The page is hosted in here: [SuperHeroApp](https://wahidx.github.io/superheroapp/pages/index.html)
+The page is hosted in here: [SuperHeroApp](https://hackerspider007.github.io/superhero-website/index.html)
 
 # Video Demonstration
-[Youtube](https://youtu.be/YNJHumhthR8)
+[Youtube]()
