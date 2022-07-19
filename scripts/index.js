@@ -1,8 +1,8 @@
 // Commonly used values
 const access_token = "338148107599656";
 const url = "https://superheroapi.com/api.php/" + access_token + "/search/";
-const favFalse = "../assets/images/white_star.png";
-const favTrue = "../assets/images/red_star.png";
+const favFalse = "assets/images/white_star.png";
+const favTrue = "assets/images/red_star.png";
 
 // create object for this app in localStorage if not present
 checkLocalStorage();
